@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./imgs/header/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/keyframes.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+</head>
+<body>
+
+<!--通用导航条-->
+<nav class="navbar fixed">
+    <div class="navbar-header container">
+        <div class="navbar-brand">
+            <a href="index.html" class="logo"></a>
+        </div>
+        <!--导航navbar-brand e-->
+        <!--小屏幕的三道杠 s-->
+        <div class="pull-right nav__menu-s">
+            <div></div>
+        </div>
+        <!--小屏幕的三道杠 e-->
+        <!--右边菜单-->
+        <div class="pull-right nav__menu-wrap">
+            <ul class="navbar-nav nav__menu row">
+                <li>
+                    <a href="index.html">首页</a>
+                    <sub class="nav__menu-sub"></sub>
+                </li>
+                <li>
+                    <a href="service.html">服务</a>
+                    <sub class="nav__menu-sub"></sub>
+                </li>
+                <li>
+                    <a href="about.html">关于</a>
+                    <sub class="nav__menu-sub"></sub>
+                </li>
+                <li>
+                    <a href="contact.html" class="active">联系我们</a>
+                    <sub class="nav__menu-sub"></sub>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--banner s-->
+<section class="banner contact__banner">
+    <div class="contact__banner-txt">
+        <img class="img-responsive" src="./imgs/banner/contact_txt.png" alt="contant__txt"/>
+    </div>
+</section>
+<!--banner e-->
+
+<article>
+    <!--reason s-->
+    <section class="section contact__reason">
+        <div class="container">
+            <p class="contact__reason-txt">
+                我们知道，当您在传统渠道拼得筋疲力尽的时候，肯定也曾不止一次想要借力于互联网，但总有诸多顾虑：<br/>
+                因为您担心网络公司不了解您的企业网站做不出您想要的效果；又操心竞价推广费用太高，网站做出来不知如何推广；<br/>
+                更因为公司一直在传统领域打拼不熟悉互联网，担心网站日后维护更新没有保障。<br/>
+                所有这些问题 <a href="tencent://message/?uin=1851424771"><span>联系我们</span></a>一次解决
+            </p>
+        </div>
+    </section>
+    <!--reason e-->
+
+    <!--address s-->
+    <section class="section address">
+        <div class="container">
+            <h1 class="text-left"> <span>有问题要解决? </span>请咨询客服</h1>
+            <ul class="address__ways-list clear">
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <!--address e-->
+
+</article>
+
+<!--底部 s-->
+<footer>
+    <div class="container">
+        <div class="row footer__content">
+            <div class="col-md-4">
+                <div>
+                    <img src="./imgs/footer/footer_logo.png" alt="logo"/>
+                </div>
+                <p>
+                    E-Mail：djieli@foxmail.com
+                </p>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-3">
+                <div class="footer__qqConsult">
+                    <p>业务咨询</p>
+                    <a href="tencent://message/?uin=1851424771">
+                        <img src="./imgs/footer/qq_consult.png" alt=""/>
+                    </a>
+                </div>
+                <div class="footer__qqConsult">
+                    <p>加入我们</p>
+                    <a href="tencent://message/?uin=1851424771">
+                        <img src="./imgs/footer/qq_consult.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 footer__code">
+                <img src="./imgs/footer/code_icon.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="footer__rightInfo text-center">
+        <span>东杰利网络科技有限公司</span>
+        <span></span>
+    </div>
+</footer>
+<!--底部 e-->
+</body>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/common.js"></script>
+<script>
+
+    //    计算窗口大小确定显示友情链接的个数
+    var x = 7;
+    $wind = $(window);
+    var wid = $wind.width();
+    if(wid<767) {
+        x = 2;
+    }
+    else {
+        x = 7;
+    }
+
+    //    友情链接的slides
+    var swiper1 = new Swiper('.swiper-container', {
+        slidesPerView: x,
+        spaceWrap: 50,
+        autoplay: true,//可选选项，自动滑动
+        loop: true
+    });
+
+
+</script>
+</html>
